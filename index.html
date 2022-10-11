@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Jakab Szabolcs | I28JIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span>Kő</span>
+                <span>Papír</span>
+                <span>Olló</span>
+            </h1>
+
+            <div class="score-container">
+                <h4>Játékos</h4>
+                <p id="own">0</p>
+            </div>
+            <div class="score-container">
+                <h4>Számítógép</h4>
+                <p id="enemy">0</p>
+            </div>
+
+
+        </header>
+
+        <main id="main">
+            <button class="btn-circle btn-paper pick" data-choice="paper">
+                <span class="wrapper">
+                    <img src="./icon-paper.png" alt="papir ikon">
+                </span>
+
+            </button>
+            <button class="btn-circle btn-scissors pick" data-choice="scissors">
+                <span class="wrapper">
+                    <img src="./icon-scissors.png" alt="ollo ikon">
+                </span>
+
+            </button>
+            <button class="btn-circle btn-rock pick" data-choice="rock">
+                <span class="wrapper">
+                    <img src="./icon-rock.png" alt="ko ikon">
+                </span>
+
+            </button>
+
+
+        </main>
+
+    </div>
+    <div class="selection" id="selection">
+        <div>
+            <h2>A te választásod</h2>
+            <button class="btn-circle btn-paper" id="user_select">
+                <span class="wrapper">
+                    <img src="./icon-paper.png" alt="papir ikon">
+                </span>
+
+            </button>
+        </div>
+        <div>
+            <p class="big-text">
+                <span id="winner"> Nyertél!</span>
+            </p>
+            <button class="btn" id="reset">Új játék</button>
+        </div>
+        <div>
+            <h2>A számítógép választása</h2>
+            <button class="btn-circle btn-scissors" id="computer_select">
+                <span class="wrapper">
+                    <img src="./icon-scissors.png" alt="ollo ikon">
+                </span>
+
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
